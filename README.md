@@ -1,3 +1,19 @@
+<div align="center">
+
+# 🦉 OAnonFTP
+
+**FTP Anonymous & Weak Login Scanner**
+
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
+
+*Part of the [OwlSec](https://owlsec.org) Toolkit*
+
+</div>
+
+---
+
 ## 📌 Overview
 
 **OAnonFTP** is an FTP security auditing tool that checks for anonymous access and weak login credentials on FTP servers. Designed for authorized penetration testing and educational purposes.
