@@ -18,13 +18,18 @@
 
 ## 📌 Overview
 
-Authorised anonymous FTP audit and read-only access card
+OAnonFtp performs an authorised, read-only audit of a single FTP server for anonymous access. It tries only a known set of anonymous accounts and passwords and never uploads, deletes or guesses credentials outside that anonymous set. On success it records a read-only access card capturing the server banner, system type and advertised features for your report.
 
 ---
 
 ## ✨ Features
 
-- Authorised anonymous FTP audit and read-only access card
+- Checks one host for anonymous FTP access using a fixed anonymous credential set
+- Strictly read-only: never uploads, deletes or brute-forces passwords
+- Records an access card with banner, system type and feature list
+- Configurable FTP port with range validation
+- Results stored under an XDG data directory with restricted permissions
+- Simple GUI plus non-interactive --check mode for scripting
 
 ---
 
@@ -38,7 +43,9 @@ Authorised anonymous FTP audit and read-only access card
 ## 🚀 Usage
 
 ```bash
-./OAnonFtp
+./OAnonFtp --check 192.168.1.10
+./OAnonFtp --check ftp.example.com --port 2121
+./OAnonFtp --help
 ```
 
 ---
